@@ -1,0 +1,20 @@
+
+<h1>Update <%= event.name %></h1>
+<form action="/events/<%= event._id  %>/update" method="post" class="horizontal-form">
+    <table>
+        <tbody>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" value="<%= event.name  %>" class="form-control"/></td>
+        </tr>
+        
+        <tr>
+            <td><br/>Description</td>
+            <td><br/><textarea name="description" class="form-control"><%= event.description  %></textarea></td>
+        </tr>
+        <tr>
+            <td><br/><input type="submit" class="btn btn-primary" value="Update Event"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
